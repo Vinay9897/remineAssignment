@@ -79,7 +79,7 @@ nav ul li:hover::after {
 nav ul a {
     text-decoration: none;
     padding: 0rem 1.3rem;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     color: #494234;
 }
@@ -106,14 +106,14 @@ nav ul a {
 }
 
 .main-content h1 {
-    font-size: 50px;
+    font-size: 60px;
     letter-spacing: 1px;
     color: #494234;
 }
 
 .main-content p {
     margin-top: 10px;
-    font-size: 10px;
+    font-size: 25px;
     letter-spacing: 1px;
 }
 
@@ -121,7 +121,7 @@ nav ul a {
     margin-top: 2.5rem;
     outline: none;
     border: none;
-    font-size: 14px;
+    font-size: 20px;
     padding: 0.5rem 2.5rem 0.5rem 1rem;
     border-radius: 0 50% 50% 0;
     background-color: #494234;
@@ -131,7 +131,7 @@ nav ul a {
 
 .swiper {
     /* border: 2px solid; */
-    width: 15rem;
+    width: 20rem;
 }
 
 .liimg {
