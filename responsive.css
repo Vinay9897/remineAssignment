@@ -1,0 +1,32 @@
+@media(max-width:500px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .w {
+        /* width: 15%; */
+    }
+
+    .w img {
+        width: 100%;
+    }
+
+    .main-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .main::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
