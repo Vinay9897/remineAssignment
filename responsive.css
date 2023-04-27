@@ -1,11 +1,18 @@
-@media(max-width:500px) {
+@media (max-width:500px) {
+    .container {
+        width: 100%;
+        height: 160vh;
+        background-color: linear-gradient(bottom, #06e99d 70%);
+    }
+
+    .header {
+        width: 100%;
+        /* border: 2px solid black; */
+    }
+
     .main {
         display: flex;
         flex-direction: column;
-    }
-
-    .w {
-        /* width: 15%; */
     }
 
     .w img {
@@ -13,20 +20,100 @@
     }
 
     .main-content {
+        margin: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content .main-text {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content .main-text h1,
+    .main-text p {
+        text-align: center;
+        padding-left: 2.5rem;
+    }
+
+    .main-content button {
+        margin-left: 3.5rem;
+
+    }
+
+    .right {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    .main-content::after {
-        content: '';
-        display: block;
-        clear: both;
+    .box {
+        margin-top: 2rem;
+        padding-left: 2rem;
+        align-items: center;
+        /* justify-content: center; */
     }
 
-    .main::after {
-        content: '';
-        display: block;
-        clear: both;
+    .box .image {
+        margin: 1.5rem 0 0 1rem;
+    }
+}
+
+@media(max-width:800px) {
+    .container {
+        width: 100%;
+        height: 160vh;
+        background-color: linear-gradient(bottom, #06e99d 70%);
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content {
+        margin: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content .main-text {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content .main-text h1,
+    .main-text p {
+        text-align: center;
+        padding-left: 2.5rem;
+    }
+
+    .main-content button {
+        margin-left: 3.5rem;
+
+    }
+
+    .right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {
+        margin-top: 2rem;
+        padding-left: 2rem;
+        align-items: center;
+    }
+
+    .box .image {
+        margin: 1.5rem 0 0 1rem;
     }
 }

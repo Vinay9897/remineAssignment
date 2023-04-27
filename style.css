@@ -13,23 +13,19 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    overflow: hidden;
 }
 
 .header {
     display: flex;
     width: 100%;
     height: 20vh;
-    /* border: 2px solid; */
     justify-content: space-between;
 }
 
 .w {
-    width: 15%;
     height: 100%;
-
+    justify-content: space-between;
     margin-left: 1rem;
-    /* border: 2px solid; */
 }
 
 .w img {
@@ -37,12 +33,13 @@
     object-fit: contain;
     object-position: center;
     height: 100%;
-    /* border-radius: 5px 5px 5px 5px; */
+}
 
+.nav-div {
+    display: flex;
 }
 
 nav {
-    width: 90%;
     height: 100%;
     margin: auto;
     padding-top: 10px;
@@ -84,19 +81,27 @@ nav ul a {
     color: #494234;
 }
 
+.main {
+    display: flex;
+    height: 80vh;
+}
+
 .main-content {
-    width: 60%;
+    width: 70%;
+    height: 50vh;
     padding-top: 100px;
     margin-left: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
     /* border: 2px solid; */
+    align-items: flex-start;
+
 }
 
 .image-pista,
 .main-text {
-    flex-basis: 50%;
+    /* flex-basis: 50%; */
     /* border: 2px solid; */
 }
 
@@ -106,12 +111,13 @@ nav ul a {
 }
 
 .main-content h1 {
-    font-size: 60px;
+    font-size: 3rem;
     letter-spacing: 1px;
     color: #494234;
 }
 
 .main-content p {
+    padding: 0rem .5rem;
     margin-top: 10px;
     font-size: 20px;
     letter-spacing: 1px;
@@ -131,10 +137,11 @@ nav ul a {
 
 .swiper {
     /* border: 2px solid; */
-    width: 20rem;
+    width: 10rem;
 }
 
 .liimg {
+
     display: flex;
     border-radius: 50%;
     align-items: center;
@@ -148,12 +155,20 @@ nav ul a {
 }
 
 .right {
-    position: absolute;
-    right: 8%;
-    bottom: 20%;
+    width: 30%;
+    height: 60vh;
+    /* border: 2px solid green; */
+}
+
+.row {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .box {
+    /* border: 2px solid; */
     display: flex;
     align-items: center;
 }
@@ -164,8 +179,8 @@ nav ul a {
 
 .image {
     margin-top: 2rem;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     box-shadow: -6px 6px 15px rgba(0, 0, 0, 0.315);
     display: flex;
@@ -217,11 +232,4 @@ nav ul a {
 
 .social-links i:hover {
     transform: translateY(-5px);
-}
-
-@media(max-width:500px) {
-    .main-content {
-        display: flex;
-        flex-direction: column;
-    }
 }
